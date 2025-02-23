@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="proxy-image.png" type="image/x-icon">
     <title>Contact - Tech & Innovation</title>
 </head>
 <body>
@@ -24,16 +23,17 @@
         <p>Have any questions, suggestions, or inquiries? Reach out to us through the form below.</p>
         <form>
             <label for="name">Name:</label>
-            <input type="text" id="name">
-            
+            <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="50"><br><br>
+        
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            
-            <label for="message">Your Message:</label>
-            <textarea id="message" required></textarea>
-            
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required maxlength="500"></textarea><br><br>
+        
             <button type="submit">Send</button>
         </form>
+        
     </section>
     <footer>
         <p>&copy; 2025 Tech & Innovation</p>
